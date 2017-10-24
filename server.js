@@ -1,7 +1,7 @@
 
 //npm packages required
 const express = require('express');
-const bodyParser = requier("body-parser");
+const bodyParser = require("body-parser");
 
 //creating an express server
 var app = express();
@@ -11,7 +11,7 @@ var PORT = process.env.PORT || 8080;
 
 //package used to help sevrer interperet incoming data
 app.use(bodyParser.json());
-app.use(bodyParser.urlendcoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 
