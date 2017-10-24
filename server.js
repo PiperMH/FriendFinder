@@ -18,3 +18,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 //routes/directions for server to specific files
 require("./app/routing/apiRoute")(app);
 require("./app/routing/htmlRoute")(app);
+app.listen(PORT, function(req, res){
+	console.log("Listening on port ", PORT);
+})
